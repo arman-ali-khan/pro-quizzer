@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiChevronsRight } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 
 const QuizItems = ({quiz}) => {
@@ -10,10 +11,12 @@ const QuizItems = ({quiz}) => {
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
           <div className="card-actions justify-end">
-          <p>Total Quiz: {total}</p>
+         <div className='flex justify-between w-full items-center'>
+         <p>Total Quiz: {total}</p>
             <Link  to={`quiz/${id}`}>
-            <button  className="btn btn-info btn-xs text-white">Start Quiz</button>
+            <button  className="btn  btn-info btn-sm md:btn-xs text-white">Start Quiz <BiChevronsRight className='text-lg'/></button>
             </Link>
+         </div>
           </div>
         </div>
       </div>

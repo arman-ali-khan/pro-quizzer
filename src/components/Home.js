@@ -15,7 +15,7 @@ const Home = () => {
             <p className='text-2xl'>Improve your programming skills</p>
             </div>
            </div>
-         <div className='grid grid-cols-2 w-[90%] md:w-9/12 md:grid-cols-4 gap-3 md:container mx-auto md:mt-24'>
+         <div className='grid grid-cols-1 w-[80%] md:w-[90%] md:grid-cols-4 gap-3 md:container mx-auto md:mt-24'>
          {
             quizes.map(quiz => <QuizItems key={quiz.id} quiz={quiz}/>)
            }
