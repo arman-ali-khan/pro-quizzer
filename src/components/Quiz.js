@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { useLoaderData } from 'react-router-dom';
 import Quistios from './Quistios';
+
 
 const Quiz = () => {
     const quizes = useLoaderData().data;
