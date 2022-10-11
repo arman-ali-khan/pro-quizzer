@@ -18,7 +18,7 @@ const Quiz = () => {
 		
 		<div className=''>
         {
-            questions.map(question => <Quistios key={question.id} questionItem={question}/>)
+            questions.map((question,index) => <Quistios id={index+1} key={question.id} questionItem={question}/>)
         }
         </div>
 	</div>

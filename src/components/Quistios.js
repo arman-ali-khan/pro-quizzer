@@ -3,9 +3,8 @@ import { AiFillEye } from "react-icons/ai";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Quistios = ({questionItem}) => {
+const Quistios = ({questionItem,id}) => {
     const {question,options,correctAnswer} = questionItem;
-
     const getCurrectAns=(answer)=>{
       if(answer === correctAnswer){
         toast.success('Currect Answer',{autoClose:500})
@@ -29,7 +28,7 @@ const Quistios = ({questionItem}) => {
     <ToastContainer/>
     <div className="stat-title  md:text-2xl flex justify-between">
       <p className='whitespace-pre-wrap text-orange-700 font-bold text-center w-full'>
-      {question} 
+     Quiz {id}: {question} 
       </p>
       <button onClick={()=>showCurrectAns(correctAnswer)}><AiFillEye className='text-black' /></button>
     </div>
