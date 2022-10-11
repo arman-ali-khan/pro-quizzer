@@ -22,12 +22,12 @@ const Quistios = ({questionItem}) => {
       
     }
     return (
-            <div className="stats shadow w-full mb-2 bg-[#6776ff11]">
+            <div className="statsw-full mb-6">
   
-  <div className="stat">
+  <div className="stat md:w-full mx-auto shadow   bg-[#6776ff11]">
 
     <ToastContainer/>
-    <div className="stat-title md:text-2xl flex justify-between">
+    <div className="stat-title  md:text-2xl flex justify-between">
       <p className='whitespace-pre-wrap text-orange-700 font-bold text-center w-full'>
       {question} 
       </p>
