@@ -22,18 +22,20 @@ const Quistios = ({questionItem}) => {
       
     }
     return (
-            <div className="stats shadow">
+            <div className="stats shadow w-full mb-2 bg-[#6776ff11]">
   
   <div className="stat">
 
     <ToastContainer/>
-    <div className="stat-title text-2xl flex">
+    <div className="stat-title md:text-2xl flex justify-between">
+      <p className='whitespace-pre-wrap text-orange-700 font-bold text-center w-full'>
       {question} 
+      </p>
       <button onClick={()=>showCurrectAns(correctAnswer)}><AiFillEye className='text-black' /></button>
     </div>
-      <div>
+      <div className='md:inline-flex w-full md:flex-wrap m-3 '>
       {
-            options.map((option, id) => <button onClick={()=>getCurrectAns(option)} className='stat-title flex  mx-auto justify-center bg-blue-200 mb-2 p-5 ' option={option} key={id}>{option}</button>)
+            options.map((option, id) => <button onClick={()=>getCurrectAns(option)} className='md:w-1/2 whitespace-pre-wrap rounded-md mx-auto justify-center text-black flex w-full shadow-md mb-2 p-5 hover:bg-slate-200 ' option={option} key={id}>{option}</button>)
         }
       </div>
   </div>
