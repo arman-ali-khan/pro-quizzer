@@ -34,7 +34,7 @@ const Quistios = ({questionItem,id}) => {
     </div>
       <div className='md:inline-flex w-full md:flex-wrap m-3 '>
       {
-            options.map((option, id) => <button onClick={()=>getCurrectAns(option)} className='md:w-1/2 whitespace-pre-wrap rounded-md mx-auto justify-center text-black flex w-full shadow-md mb-2 p-5 hover:bg-slate-200 ' option={option} key={id}>{option}</button>)
+            options.map((option, id) => <button onClick={()=>getCurrectAns(option)} className='md:w-1/2 whitespace-pre-wrap rounded-md mx-auto justify-center text-black flex items-center w-full shadow-md mb-2 p-5 hover:bg-slate-200 ' option={option} key={id}>{option}</button>)
         }
       </div>
   </div>
